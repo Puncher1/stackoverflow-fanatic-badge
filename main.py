@@ -1,14 +1,11 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
-from dotenv import load_dotenv
 
 import stackoverflow
 
 
-load_dotenv()
 schedule = BlockingScheduler()
 
-
-@schedule.scheduled_job("interval", minutes=1)
+@schedule.scheduled_job("interval", hours=12)
 def access_stackoverflow_page():
     stackoverflow.login()
 
