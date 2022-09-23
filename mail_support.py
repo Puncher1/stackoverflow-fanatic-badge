@@ -72,7 +72,6 @@ def send_passed(login_streak):
     msg["Subject"] = f"[INFO] - Logged into stackoverflow.com"
     msg["From"] = __client.email_from
     msg["To"] = __client.email_to
-    print(__client.email, __client.email_from, __client.email_to, __client.smtp_address)
     print("Logged into stackoverflow.com and accessed profile page.")
 
     html_content = f"""
