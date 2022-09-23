@@ -42,7 +42,7 @@ def login():
         time.sleep(1)
 
         # profile button
-        driver.find_element(By.XPATH, "/html/body/header/div/ol[2]/li[2]/a").click()
+        driver.find_element(By.XPATH, "/html/body/header/div/nav/ol/li[2]/a/div[1]").click()
         time.sleep(1)
 
         # display name
